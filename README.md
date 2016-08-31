@@ -1,5 +1,5 @@
 # pen-drive-formatter
-Este programa realiza a formatação de um dispositivo de armazenamento utilizando o comando mkfs.vfat.
+Este programa realiza a formatacao de um dispositivo de armazenamento utilizando o comando mkfs.vfat.
 
 Uso: ./formatter.sh ou bash formatter.sh
 
