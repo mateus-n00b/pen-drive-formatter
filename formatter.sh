@@ -1,16 +1,9 @@
 #!/bin/bash
-# Programa que realiza a formatacao de um dispositivo de armazenamento utilizando o programa mkfs.vfat
-#
-# Mateus, Agosto 2016
-#
-# Versao 1.0
-#
-# Licenca GPL
-# 
-#-========================================================================================================-
- 
 pen=$(df | grep -i media | awk -F" " '{print $6}')
 devs=$(df | grep -i media | awk -F" " '{print $1}')
+
+[ -z "$pen" ] && echo "Nenhum dispositivo encontrado! Saindo..." && exit 1
+
 echo "[!] Voce tem os seguintes dispositivos:"
 cont=0
 
