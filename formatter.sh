@@ -1,4 +1,12 @@
 #!/bin/bash
+# Este programa realiza a formatacao de pen drives.
+# 
+# Mateus-n00b, Setembro 2016
+#
+# Versao 1.0
+#
+# Licenca GPL
+################################################################################################
 pen=$(df | grep -i media | awk -F" " '{print $6}')
 devs=$(df | grep -i media | awk -F" " '{print $1}')
 
